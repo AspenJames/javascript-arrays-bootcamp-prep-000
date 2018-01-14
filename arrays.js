@@ -15,5 +15,22 @@ function destructivelyAddElementToEndOfArray(array, element){
   array.push(element)
   return array
 }
-
-console.log(destructivelyAddElementToBeginningOfArray([1], 'foo'))
+function accessElementInArray(array, index){
+  return array[index]
+}
+function destructivelyRemoveElementFromBeginningOfArray(array){
+  array.shift()
+  return array
+}
+function removeElementFromBeginningOfArray(array){
+  arraySlice = array.slice(1)
+  return arraySlice
+}
+function destructivelyRemoveElementFromEndOfArray(array){
+  array.pop()
+  return array
+}
+function removeElementFromEndOfArray(array){
+  newArray = array.slice(0,array.length-1)
+  return newArray
+}
